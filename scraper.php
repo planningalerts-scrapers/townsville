@@ -1,4 +1,5 @@
 <?php
+require 'scraperwiki.php';
 
 require 'scraperwiki/simple_html_dom.php';
 
@@ -75,7 +76,7 @@ foreach ($rss->channel->item as $item)
         //'on_notice_to' => $on_notice_to
     );
 
-    $existingRecords = scraperwiki::select("* from swdata where `council_reference`='" . $application['council_reference'] . "'");
+    $existingRecords = scraperwiki::select("* from data where `council_reference`='" . $application['council_reference'] . "'");
     if (sizeof($existingRecords) == 0)
     {
         scraperwiki::save(array('council_reference'), $application);
