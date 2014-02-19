@@ -27,6 +27,7 @@ curl_setopt($curl, CURLOPT_USERAGENT, "Mozilla/5.0 (compatible; PlanningAlerts/0
 $rss_response = curl_exec($curl);
 curl_close($curl);
 
+$rss_response = preg_replace('/utf-16/i', 'utf-8', $rss_response);
 $rss = simplexml_load_string($rss_response);
 
 // Iterate through each application
