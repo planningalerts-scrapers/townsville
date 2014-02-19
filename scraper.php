@@ -23,9 +23,11 @@ print "Scraping wokim.townsville.qld.gov.au...\n";
 // Download and parse RSS feed (last 14 days of applications)
 $curl = curl_init($rss_feed);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl, CURLOPT_USERAGENT, "Mozilla/5.0 (compatible; PlanningAlerts/0.1; +http://www.planningalerts.org.au/)");
 $rss_response = curl_exec($curl);
 curl_close($curl);
 
+$rss_response = preg_replace('/utf-16/i', 'utf-8', $rss_response);
 $rss = simplexml_load_string($rss_response);
 
 // Iterate through each application
