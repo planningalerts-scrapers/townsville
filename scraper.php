@@ -1,7 +1,7 @@
 <?php
-require 'scraper/scraperwiki.php';
+require 'scraperwiki.php';
 
-require 'scraper/scraperwiki/simple_html_dom.php';
+require 'scraperwiki/simple_html_dom.php';
 
 // Townsville City Council Development Applications scraper
 // (ICON Software Solutions PlanningXchange)
