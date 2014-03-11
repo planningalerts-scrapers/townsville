@@ -40,6 +40,11 @@ foreach ($rss->channel->item as $item)
     
     // RSS description appears to be the address followed by the actual description
     $rss_description = preg_split('/\./', $item->description, 2);
+    // But of course some have no address, ugh...
+    if(count($rss_description) != 2) {
+        print "Description field missing an address for application $council_reference";
+        continue;
+    }
     $address = trim($rss_description[0]);
     $description = trim($rss_description[1]);
 
