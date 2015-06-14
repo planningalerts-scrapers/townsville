@@ -50,10 +50,10 @@ foreach ($rss->channel->item as $item)
 
     $info_url = $url_baselink . trim((string)$item->link);
 
-    //Publication date is seperated by slashes. Explode then put together so strtotime can parse correctly.
-    $pub_date_explode = explode("/", $item->pubDate);
+    //Publication date is a full ISO format string. eg. 2015-06-02T16:12:34.34+10:00
+    //But we only want the date part.
     $date_scraped = date($date_format);
-    $date_received = date($date_format, strtotime($pub_date_explode[0]."-".$pub_date_explode[1]."-".$pub_date_explode[2]));
+    $date_received = date($date_format, strtotime($item->pubDate));
 
 
     $application = array(
