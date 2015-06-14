@@ -61,7 +61,7 @@ foreach ($rss->channel->item as $item)
         'address' => $address,
         'description' => $description,
         'info_url' => $info_url,
-        'comment_url' => $comment_url,
+        'comment_url' => $comment_url . "?subject=" . urlencode("Development Application Enquiry: {$council_reference}"),
         'date_scraped' => $date_scraped,
         'date_received' => $date_received
     );
