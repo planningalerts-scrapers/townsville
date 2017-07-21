@@ -1,0 +1,182 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "d0d16066ce3bd67c743f159bd231b1f0",
+    "packages": [
+        {
+            "name": "byjg/pgbrowser",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/byjg/pgbrowser.git",
+                "reference": "717a35704437a638a9939da3c146733892459067"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/byjg/pgbrowser/zipball/717a35704437a638a9939da3c146733892459067",
+                "reference": "717a35704437a638a9939da3c146733892459067",
+                "shasum": ""
+            },
+            "require": {
+                "electrolinux/phpquery": "0.9.*",
+                "pguardiario/phpuri": "*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "PGuardiario\\": [
+                        "src/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "A 'pretty good' mechanize-like php library for managing cookies and submitting forms. [Fork: Totally rewrite]",
+            "time": "2016-05-06T20:32:02+00:00"
+        },
+        {
+            "name": "electrolinux/phpquery",
+            "version": "0.9.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/electrolinux/phpquery.git",
+                "reference": "6cb8afcfe8cd4ce45f2f8c27d561383037c27a3a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/electrolinux/phpquery/zipball/6cb8afcfe8cd4ce45f2f8c27d561383037c27a3a",
+                "reference": "6cb8afcfe8cd4ce45f2f8c27d561383037c27a3a",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "phpQuery/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tobiasz Cudnik",
+                    "email": "tobiasz.cudnik@gmail.com",
+                    "homepage": "https://github.com/TobiaszCudnik",
+                    "role": "Developer"
+                },
+                {
+                    "name": "didier Belot",
+                    "role": "Packager"
+                }
+            ],
+            "description": "phpQuery is a server-side, chainable, CSS3 selector driven Document Object Model (DOM) API based on jQuery JavaScript Library",
+            "homepage": "http://code.google.com/p/phpquery/",
+            "time": "2013-03-21T12:39:33+00:00"
+        },
+        {
+            "name": "openaustralia/scraperwiki",
+            "version": "dev-morph_defaults",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/openaustralia/scraperwiki-php.git",
+                "reference": "e996fe0253bb50330690f5d2bafb66f094dbacb8"
+            },
+            "require": {
+                "ext-pdo_sqlite": "*"
+            },
+            "type": "library",
+            "time": "2014-06-23 01:47:45"
+        },
+        {
+            "name": "pguardiario/phpuri",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/monkeysuffrage/phpuri.git",
+                "reference": "ad0a5ec033fe616cfef55578b9c7f2458be8fbfc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/monkeysuffrage/phpuri/zipball/ad0a5ec033fe616cfef55578b9c7f2458be8fbfc",
+                "reference": "ad0a5ec033fe616cfef55578b9c7f2458be8fbfc",
+                "shasum": ""
+            },
+            "type": "project",
+            "autoload": {
+                "files": [
+                    "phpuri.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "A php library for converting relative urls to absolute.",
+            "time": "2015-05-24T09:13:17+00:00"
+        },
+        {
+            "name": "sunra/php-simple-html-dom-parser",
+            "version": "v1.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sunra/php-simple-html-dom-parser.git",
+                "reference": "75b9b1cb64502d8f8c04dc11b5906b969af247c6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sunra/php-simple-html-dom-parser/zipball/75b9b1cb64502d8f8c04dc11b5906b969af247c6",
+                "reference": "75b9b1cb64502d8f8c04dc11b5906b969af247c6",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sunra\\PhpSimple\\HtmlDomParser": "Src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sunra",
+                    "email": "sunra@yandex.ru",
+                    "homepage": "https://github.com/sunra"
+                },
+                {
+                    "name": "S.C. Chen",
+                    "homepage": "http://sourceforge.net/projects/simplehtmldom/"
+                }
+            ],
+            "description": "Composer adaptation of: A HTML DOM parser written in PHP5+ let you manipulate HTML in a very easy way! Require PHP 5+. Supports invalid HTML. Find tags on an HTML page with selectors just like jQuery. Extract contents from HTML in a single line.",
+            "homepage": "https://github.com/sunra/php-simple-html-dom-parser",
+            "keywords": [
+                "dom",
+                "html",
+                "parser"
+            ],
+            "time": "2016-11-22T22:57:47+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "openaustralia/scraperwiki": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "ext-sqlite3": "*",
+        "ext-pdo_sqlite": "*",
+        "ext-gd": "*",
+        "ext-mbstring": "*"
+    },
+    "platform-dev": []
+}

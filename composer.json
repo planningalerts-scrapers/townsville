@@ -1,0 +1,17 @@
+{
+    "repositories": [
+        {
+            "url": "https://github.com/openaustralia/scraperwiki-php.git",
+            "type": "git"
+        }
+    ],
+    "require": {
+        "openaustralia/scraperwiki": "dev-morph_defaults",
+        "ext-sqlite3": "*",
+        "ext-pdo_sqlite": "*",
+        "ext-gd": "*",
+        "ext-mbstring": "*",
+        "byjg/pgbrowser" : "1.0.*",
+        "sunra/php-simple-html-dom-parser": "1.5.2"
+    }
+}
