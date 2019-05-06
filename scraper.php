@@ -68,12 +68,7 @@ foreach ($results as $result) {
     ];
 
     # Check if record exist, if not, INSERT, else do nothing
-    $existingRecords = scraperwiki::select("* from data where `council_reference`='" . $record['council_reference'] . "'");
-    if (count($existingRecords) == 0) {
-        print ("Saving record " .$record['council_reference']. " - " .$record['address']. "\n");
+    print ("Saving record " .$record['council_reference']. " - " .$record['address']. "\n");
 //         print_r ($record);
-        scraperwiki::save(['council_reference'], $record);
-    } else {
-        print ("Skipping already saved record " . $record['council_reference'] . "\n");
-    }
+    scraperwiki::save(['council_reference'], $record);
 }
