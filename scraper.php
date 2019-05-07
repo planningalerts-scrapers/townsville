@@ -3,7 +3,7 @@ require_once 'vendor/autoload.php';
 require_once 'vendor/openaustralia/scraperwiki/scraperwiki.php';
 
 use PGuardiario\PGBrowser;
-use Sunra\PhpSimple\HtmlDomParser;
+use Torann\DomParser\HtmlDom;
 
 date_default_timezone_set('Australia/Sydney');
 
@@ -29,7 +29,7 @@ $browser = new PGBrowser();
 $full_url = $url_base. '?' .$url_query. '&d=' .$period;
 $page = $browser->get($full_url);
 
-$page_dom = HtmlDomParser::str_get_html($page->html);
+$page_dom = HtmlDom::fromString($page->html);
 $results = $page_dom->find("div[class=result]");
 
 foreach ($results as $result) {
@@ -38,20 +38,20 @@ foreach ($results as $result) {
 
     // getting detail page
     $page2 = $browser->get($info_url);
-    $page2_dom = HtmlDomParser::str_get_html($page2->html);
+    $page2_dom = HtmlDom::fromString($page2->html);
     $divs = $page2_dom->find("div[class=detailleft]");
 
     foreach ($divs as $div) {
         switch ($div->plaintext) {
             case 'Description:' :
-                $description = trim($div->next_sibling()->plaintext);
+                $description = trim($div->nextSibling()->plaintext);
                 break;
             case 'Properties:' :
-                $address = explode("\n", $div->next_sibling()->plaintext);
+                $address = explode("\n", $div->nextSibling()->plaintext);
                 $address = trim(preg_replace('/\s+/', ' ', $address[0]));
                 break;
             case 'Lodged:' :
-                $date_received = explode("/", $div->next_sibling()->plaintext);
+                $date_received = explode("/", $div->nextSibling()->plaintext);
                 $date_received = $date_received[2] . '-' . $date_received[1] . '-' . $date_received[0];
                 break;
         }
