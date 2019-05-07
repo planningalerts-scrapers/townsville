@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d0d16066ce3bd67c743f159bd231b1f0",
+    "content-hash": "63b3bc0438642f35d6c19780a18ce4a3",
     "packages": [
         {
             "name": "byjg/pgbrowser",
@@ -89,7 +89,7 @@
                 "ext-pdo_sqlite": "*"
             },
             "type": "library",
-            "time": "2014-06-23 01:47:45"
+            "time": "2014-06-23T01:47:45+00:00"
         },
         {
             "name": "pguardiario/phpuri",
@@ -116,27 +116,26 @@
             "time": "2015-05-24T09:13:17+00:00"
         },
         {
-            "name": "sunra/php-simple-html-dom-parser",
-            "version": "v1.5.2",
+            "name": "torann/dom-parser",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sunra/php-simple-html-dom-parser.git",
-                "reference": "75b9b1cb64502d8f8c04dc11b5906b969af247c6"
+                "url": "https://github.com/Torann/dom-parser.git",
+                "reference": "dd21f419e6b2e076d112570fb650c69bbb1462e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sunra/php-simple-html-dom-parser/zipball/75b9b1cb64502d8f8c04dc11b5906b969af247c6",
-                "reference": "75b9b1cb64502d8f8c04dc11b5906b969af247c6",
+                "url": "https://api.github.com/repos/Torann/dom-parser/zipball/dd21f419e6b2e076d112570fb650c69bbb1462e5",
+                "reference": "dd21f419e6b2e076d112570fb650c69bbb1462e5",
                 "shasum": ""
             },
             "require": {
-                "ext-mbstring": "*",
-                "php": ">=5.3.2"
+                "php": "^7.1.3"
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "Sunra\\PhpSimple\\HtmlDomParser": "Src/"
+                "psr-4": {
+                    "Torann\\DomParser\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -145,23 +144,28 @@
             ],
             "authors": [
                 {
-                    "name": "Sunra",
-                    "email": "sunra@yandex.ru",
-                    "homepage": "https://github.com/sunra"
+                    "name": "Daniel Stainback",
+                    "email": "daniel@lyften.com",
+                    "homepage": "http://lyften.com"
                 },
                 {
                     "name": "S.C. Chen",
                     "homepage": "http://sourceforge.net/projects/simplehtmldom/"
+                },
+                {
+                    "name": "Sunra",
+                    "email": "sunra@yandex.ru",
+                    "homepage": "https://github.com/sunra/php-simple-html-dom-parser"
                 }
             ],
-            "description": "Composer adaptation of: A HTML DOM parser written in PHP5+ let you manipulate HTML in a very easy way! Require PHP 5+. Supports invalid HTML. Find tags on an HTML page with selectors just like jQuery. Extract contents from HTML in a single line.",
-            "homepage": "https://github.com/sunra/php-simple-html-dom-parser",
+            "description": "A HTML DOM parser written in PHP7 let you manipulate HTML in a very easy way! Supports invalid HTML. Find tags on an HTML page with selectors just like jQuery. Extract contents from HTML in a single line.",
+            "homepage": "https://github.com/Torann/dom-parser",
             "keywords": [
                 "dom",
                 "html",
                 "parser"
             ],
-            "time": "2016-11-22T22:57:47+00:00"
+            "time": "2019-05-01T14:04:49+00:00"
         }
     ],
     "packages-dev": [],

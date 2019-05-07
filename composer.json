@@ -11,7 +11,7 @@
         "ext-pdo_sqlite": "*",
         "ext-gd": "*",
         "ext-mbstring": "*",
-        "byjg/pgbrowser" : "1.0.*",
-        "sunra/php-simple-html-dom-parser": "1.5.2"
+        "byjg/pgbrowser" : "*",
+        "torann/dom-parser": "*"
     }
 }
