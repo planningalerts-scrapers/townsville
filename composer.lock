@@ -96,13 +96,13 @@
             "version": "1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/monkeysuffrage/phpuri.git",
-                "reference": "ad0a5ec033fe616cfef55578b9c7f2458be8fbfc"
+                "url": "https://github.com/XSIRIX/phpuri.git",
+                "reference": "9a27a7910eb07a11fb848c7e6c6d6dfc887995e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/monkeysuffrage/phpuri/zipball/ad0a5ec033fe616cfef55578b9c7f2458be8fbfc",
-                "reference": "ad0a5ec033fe616cfef55578b9c7f2458be8fbfc",
+                "url": "https://github.com/XSIRIX/phpuri/archive/refs/tags/v1.0.0.zip",
+                "reference": "9a27a7910eb07a11fb848c7e6c6d6dfc887995e4",
                 "shasum": ""
             },
             "type": "project",
