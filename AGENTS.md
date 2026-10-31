@@ -16,3 +16,16 @@ Do not rely on a cached or remembered copy. It changes as org conventions evolve
 
 Rendered for humans:
 https://github.com/planningalerts-scrapers/issues/blob/master/AGENTS.md
+
+## How do I test
+
+```
+bundle config set --local path vendor/bundle
+bundle install
+bundle exec rake
+bundle exec rubocop
+```
+
+The specs use the fixtures in `spec/fixtures/` and don't contact any site. They report line and branch coverage of `scraper.rb`.
+
+A live run (`bundle exec ruby scraper.rb`) only reaches `eplanning.townsville.qld.gov.au`, plus the Australian proxy when `MORPH_AUSTRALIAN_PROXY` is set.
