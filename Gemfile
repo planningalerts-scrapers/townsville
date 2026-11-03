@@ -11,7 +11,7 @@ ruby "3.2.2" # ruby 3.2.3 does NOT run on heroku-18!
 gem "mechanize", "~> 2.14"
 gem "nokogiri", "~> 1.17.2" # nokogiri 1.18 does NOT run on heroku-18!
 gem "scraperwiki", git: "https://github.com/openaustralia/scraperwiki-ruby.git", branch: "morph_defaults"
-gem "sqlite3", "~> 2.2.0" # sqlite3 2.3.0 does NOT run on heroku-18!
+gem "sqlite3", "~> 2.9.6" # sqlite3 2.3.0 does NOT run on heroku-18!
 
 group :development do
   gem "rake", "~> 12.3"
